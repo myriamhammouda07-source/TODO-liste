@@ -1,0 +1,122 @@
+:root {
+  --primary-pink: #ffb7c5; /* Rose poudré */
+  --light-pink: #fff0f3; /* Fond très clair */
+  --text-dark: #6d4c41; /* Marron doux pour le texte */
+  --text-light: #a1887f;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open source", sans-serif;
+  background-color: var(--light-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.app-container {
+  background: var(--white);
+  padding: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 35px rgba(255, 183, 197, 0.3);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: var(--text-dark);
+}
+
+.stats {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1.5px solid var(--primary-pink);
+  border-radius: 12px;
+  outline: none;
+  background: var(--light-pink);
+  color: var(--text-dark);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-add {
+  background-color: var(--primary-pink);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+.btn-delete-all {
+  background: none;
+  color: var(--text-light);
+  border: 1px solid var(--primary-pink);
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+h3 {
+  font-weight: 400;
+  color: var(--text-dark);
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.task-item {
+  background: var(--light-pink);
+  border-radius: 15px;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 183, 197, 0.2);
+}
+
+.btn-task {
+  background: var(--white);
+  color: var(--text-light);
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.7rem;
+  border: 1px solid var(--primary-pink);
+}
